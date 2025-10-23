@@ -927,10 +927,8 @@
     </footer>
 
     <script>
-    const API_URL = 'https://your-backend-url.herokuapp.com';
-    
     // Price prediction functionality
-    document.getElementById('pricePredictionForm').addEventListener('submit', async function(e) {
+    document.getElementById('pricePredictionForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Show loading state
@@ -948,6 +946,10 @@
             algorithm: document.getElementById('algorithm').value
         };
         
-        try {
-            // Call your backend API
-            const response = await fetch(`${
+        // Use the fallback prediction function
+        fallbackPrediction(formData);
+    });
+    
+    // Fallback function if API is unavailable
+    function fallbackPrediction(formData) {
+        const {
