@@ -597,6 +597,8 @@
                         <label for="storage">Storage (GB):</label>
                         <select id="storage" required>
                             <option value="">Select Storage</option>
+                            <option value=""16>16 GB</option>
+                            <option value="32">32 GB</option>
                             <option value="64">64 GB</option>
                             <option value="128">128 GB</option>
                             <option value="256">256 GB</option>
@@ -627,7 +629,6 @@
                         <label for="algorithm">Prediction Algorithm:</label>
                         <select id="algorithm" required>
                             <option value="random_forest">Random Forest (Recommended)</option>
-                            <option value="gradient_boosting">Gradient Boosting</option>
                             <option value="neural_network">Neural Network</option>
                         </select>
                     </div>
@@ -680,8 +681,12 @@
                     <div class="form-group">
                         <label for="compare_storage_1">Storage (GB):</label>
                         <select id="compare_storage_1">
+                            <option value="16">16 GB</option>
+                            <option value="32">32 GB</option>
+                            <option value="64">64 GB</option>
                             <option value="128">128 GB</option>
                             <option value="256">256 GB</option>
+                            <option value="512">512 GB</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -721,8 +726,14 @@
                     <div class="form-group">
                         <label for="compare_storage_2">Storage (GB):</label>
                         <select id="compare_storage_2">
+                            <option value="16">16 GB</option>
+                            <option value="32">32 GB</option>
+                            <option value="16">16 GB</option>
                             <option value="128">128 GB</option>
-                            <option value="256" selected>256 GB</option>
+                            <option value="256">256 GB</option>
+                            <option value="512">512 GB</option>
+
+                            
                         </select>
                     </div>
                     <div class="form-group">
